@@ -22,14 +22,14 @@
     ];
 
     const RESPONSES = {
-        services: 'We offer Web Development, Payment & Checkout Solutions, Automation & Intelligence, Performance & Optimization, Security & Maintenance, and Local Visibility & Content. Scroll to the Services section for the full breakdown.',
-        portfolio: 'The Portfolio section has sample sites — e-commerce, local business, SaaS, and studio work. Scroll there to see the kind of builds I deliver for clients.',
-        contact: 'Reach out at info@company.com or +1 (800) 555-1234. You can also fill out the form in the Contact section — I reply within one business day.',
-        pricing: 'Every project is scoped individually based on your needs. Head to the Contact section and we\'ll put together a clear quote.',
-        about: 'I\'m a solo developer — you work directly with the person building your project. No hand-offs, no agency overhead. Check the About section to learn more.',
+        services: 'We offer Web Development, Payment & Checkout Solutions, Automation & Intelligence, Performance & Optimization, Security & Maintenance, and Local Visibility & Content. Visit the Services page for the full breakdown.',
+        portfolio: 'The Portfolio page has sample sites — e-commerce, local business, SaaS, and studio work. Open it to see the kind of builds I deliver for clients.',
+        contact: 'Reach out at info@company.com or +1 (800) 555-1234. You can also fill out the form on the Contact page — I reply within one business day.',
+        pricing: 'Every project is scoped individually based on your needs. Head to the Contact page and we\'ll put together a clear quote.',
+        about: 'I\'m a solo developer — you work directly with the person building your project. No hand-offs, no agency overhead. Check the About page to learn more.',
         hello: 'Hello! How can I help you today?',
         thanks: 'You\'re welcome! Let me know if there\'s anything else.',
-        default: 'Good question. For anything detailed, visit the Contact section or try one of the quick options below.',
+        default: 'Good question. For anything detailed, visit the Contact page or try one of the quick options below.',
     };
 
     const KEYWORDS = [

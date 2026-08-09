@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <!--
-  Base layout template — the site is a single scrollable page (index.html).
-  Add new sections to index.html with an id attribute for anchor navigation,
-  then link to them from components/site-header.html.
+  Base layout template for multi-page entries.
+  Copy this file, set a unique <title>, replace the main content,
+  and keep the header/footer mounts plus shared scripts.
 -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>We Scale Your Business</title>
+    <title>Page Title — Scale Your Business</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
@@ -17,12 +17,18 @@
     <div id="site-header"></div>
 
     <main class="flex-1">
-        <section id="section-id" class="scroll-mt-24">
-            <!-- Section content -->
+        <section class="max-w-6xl mx-auto px-6 py-24 md:py-32">
+            <!-- Page content -->
         </section>
     </main>
 
     <div id="site-footer" class="mt-auto w-full"></div>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+    </button>
 
     <script src="layouts/load-layout.js"></script>
     <script src="components/chatbot-widget.js"></script>

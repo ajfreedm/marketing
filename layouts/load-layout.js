@@ -10,6 +10,25 @@
         footer: 'components/site-footer.html',
     };
 
+    function currentPageKey() {
+        const file = (window.location.pathname.split('/').pop() || 'index.html').toLowerCase();
+        if (!file || file === 'index.html' || file === 'index.htm') return 'home';
+        return file.replace(/\.html?$/, '');
+    }
+
+    function highlightActiveNav() {
+        const page = currentPageKey();
+        document.querySelectorAll('[data-nav]').forEach((link) => {
+            const isActive = link.getAttribute('data-nav') === page;
+            link.classList.toggle('nav-active', isActive);
+            if (isActive) {
+                link.setAttribute('aria-current', 'page');
+            } else {
+                link.removeAttribute('aria-current');
+            }
+        });
+    }
+
     function initMobileMenu() {
         const menuToggle = document.getElementById('menu-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -54,6 +73,7 @@
             injectComponent(COMPONENTS.footer, 'site-footer'),
         ]);
         initMobileMenu();
+        highlightActiveNav();
     }
 
     if (document.readyState === 'loading') {
