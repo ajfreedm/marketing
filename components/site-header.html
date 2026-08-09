@@ -1,0 +1,23 @@
+<!-- Shared site header — loaded by layouts/load-layout.js -->
+<header class="sticky top-0 z-50 border-b border-white/20 bg-[#02457C]">
+    <div class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
+        <a href="#home">
+            <img src="assets/images/logo.jpg" alt="Company Logo" class="h-32 w-auto">
+        </a>
+        <nav class="hidden md:flex items-center gap-10">
+            <a href="#home" class="text-white hover:opacity-70 transition-opacity">Home</a>
+            <a href="#services" class="text-white hover:opacity-70 transition-opacity">Services</a>
+            <a href="#portfolio" class="text-white hover:opacity-70 transition-opacity">Portfolio</a>
+            <a href="#about" class="text-white hover:opacity-70 transition-opacity">About</a>
+            <a href="#contact" class="nav-cta">Get Started</a>
+        </nav>
+        <button id="menu-toggle" class="md:hidden border border-white px-3 py-1 text-sm" aria-label="Toggle menu">Menu</button>
+    </div>
+    <nav id="mobile-menu" class="hidden md:hidden border-t border-white/20 px-6 py-4 flex flex-col gap-4 bg-[#02457C]">
+        <a href="#home" class="text-white nav-link">Home</a>
+        <a href="#services" class="text-white nav-link">Services</a>
+        <a href="#portfolio" class="text-white nav-link">Portfolio</a>
+        <a href="#about" class="text-white nav-link">About</a>
+        <a href="#contact" class="nav-cta text-center nav-link">Get Started</a>
+    </nav>
+</header>

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ── Global ─────────────────────────────────────────────── */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #02457C !important;
+    color: #FFFFFF !important;
+}
+
+.accent-highlight {
+    color: #FFE600;
+}
+
+.nav-cta {
+    display: inline-block;
+    background: #FFE600;
+    color: #02457C;
+    font-weight: 600;
+    font-size: 0.875rem;
+    padding: 0.5rem 1.25rem;
+    border: 2px solid #FFE600;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.nav-cta:hover {
+    background: transparent;
+    color: #FFE600;
+}
+
+/* ── Form fields ────────────────────────────────────────── */
+
+input, textarea, select {
+    background: transparent !important;
+    border: 1px solid #FFFFFF !important;
+    color: #FFFFFF !important;
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #FFFFFF !important;
+    box-shadow: 0 0 0 1px #FFFFFF;
+}
+
+/* ── Back to top ────────────────────────────────────────── */
+
+.back-to-top {
+    position: fixed;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    z-index: 99990;
+    width: 2.75rem;
+    height: 2.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #02457C;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(0.5rem);
+    transition: opacity 0.25s ease, visibility 0.25s ease, transform 0.25s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    border-color: rgba(255, 255, 255, 0.6);
+    background: #035a96;
+}
+
+.back-to-top svg {
+    width: 1.125rem;
+    height: 1.125rem;
+}
+
+/* ── Portfolio outlines ──────────────────────────────────── */
+
+.portfolio-browser {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.portfolio-browser-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.65rem 0.85rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.portfolio-dot {
+    width: 0.45rem;
+    height: 0.45rem;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.portfolio-url {
+    margin-left: 0.5rem;
+    flex: 1;
+    min-height: 1.1rem;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.portfolio-preview {
+    min-height: 13.5rem;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.portfolio-line {
+    height: 0.65rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.portfolio-line--label {
+    width: 30%;
+    height: 0.5rem;
+}
+
+.portfolio-line--title {
+    width: 55%;
+    height: 0.9rem;
+}
+
+.portfolio-line--short {
+    width: 40%;
+}
