@@ -73,7 +73,7 @@ All content lives on `index.html` as scrollable sections:
 | Section ID | Content |
 |------------|---------|
 | `#home` | Hero with primary CTAs |
-| `#services` | Five service categories with deliverables |
+| `#services` | Six service categories with deliverables |
 | `#portfolio` | Mock client websites in browser previews |
 | `#about` | Solo developer story and working principles |
 | `#contact` | Contact details and message form |

@@ -22,7 +22,7 @@
     ];
 
     const RESPONSES = {
-        services: 'We offer Payment & Checkout Solutions, Automation & Intelligence, Performance & Optimization, Security & Maintenance, and Local Visibility & Content. Scroll to the Services section for the full breakdown.',
+        services: 'We offer Web Development, Payment & Checkout Solutions, Automation & Intelligence, Performance & Optimization, Security & Maintenance, and Local Visibility & Content. Scroll to the Services section for the full breakdown.',
         portfolio: 'The Portfolio section has sample sites — e-commerce, local business, SaaS, and studio work. Scroll there to see the kind of builds I deliver for clients.',
         contact: 'Reach out at info@company.com or +1 (800) 555-1234. You can also fill out the form in the Contact section — I reply within one business day.',
         pricing: 'Every project is scoped individually based on your needs. Head to the Contact section and we\'ll put together a clear quote.',
